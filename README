@@ -1,6 +1,8 @@
 ::OpenFrameworks SuperCollider Server Host::
 
-This project shows how to run a SuperCollider server from within the audio callback in openFrameworks (version 007).  It's based on Gerard Roma's SuperColliderAU project.
+This project shows how to run a SuperCollider server from within the audio callback in openFrameworks (version 007).  This means you can generate audio or control input from your OF app, and then grab SC's audio output to control openGL visualisations etc etc etc, or something completely different?
+
+It's based on Gerard Roma's SuperColliderAU project.
 
 Usage:  Running this project will start a blank OF app along with a SC server.  You can access the server from the SuperCollider app, where you can build a synthdef graph to generate or process audio. See the SuperColliderAU help file for an example of how this works.
 
@@ -9,7 +11,7 @@ Limitations:  There is no event scheduling in the server. SC needs timing info f
 How it works: A variant of libscsynth was built from the SuperCollider source, with the following changes:
 (1) -DSC_AUDIO_API=SC_AUDIO_API_AUDIOUNITS was added to the 'Other c-flags' configuration.
 (2) '_AUCallback' was added to the list of exports in libscsynth_exp.
-This static library is included in this repository as 'libsynthAU.a'
+This static library is included in this repository as 'libscsynthAU.a'
 
 
 
