@@ -4,7 +4,7 @@ This project shows how to run a SuperCollider server from within the audio callb
 
 Usage:  Running this project will start a blank OF app along with a SC server.  You can access the server from the SuperCollider app, where you can build a synthdef graph to generate or process audio. See the SuperColliderAU help file for an example of how this works.
 
-Limitations:  There is no event scheduling in the server. SC needs timing info for this and OF does not expose time stamps for audio buffers.
+Limitations:  There is no event scheduling in the server. SC needs timing info for this as OF does not expose time stamps for audio buffers.
 
 How it works: A variant of libscsynth was built from the SuperCollider source, with the following changes:
 (1) -DSC_AUDIO_API=SC_AUDIO_API_AUDIOUNITS was added to the 'Other c-flags' configuration.
@@ -12,8 +12,6 @@ How it works: A variant of libscsynth was built from the SuperCollider source, w
 This static library is included in this repository as 'libsynthAU.a'
 
 
-
-ChrisK '11
 
 
 
