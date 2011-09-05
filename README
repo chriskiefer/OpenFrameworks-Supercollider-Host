@@ -1,6 +1,6 @@
 ::OpenFrameworks SuperCollider Server Host::
 
-This project shows how to run a SuperCollider server from within the audio callback in openFrameworks.  It's based on Gerard Roma's SuperColliderAU project.
+This project shows how to run a SuperCollider server from within the audio callback in openFrameworks (version 007).  It's based on Gerard Roma's SuperColliderAU project.
 
 Usage:  Running this project will start a blank OF app along with a SC server.  You can access the server from the SuperCollider app, where you can build a synthdef graph to generate or process audio. See the SuperColliderAU help file for an example of how this works.
 
