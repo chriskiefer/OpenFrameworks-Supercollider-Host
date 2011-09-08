@@ -30,6 +30,7 @@ public:
 	AudioBufferList *scBufferList;
 	int sampleRate;
 	int bufferSize;
+	int nChannels;
 	void initialize();
 	void syncOSCOffsetWithTimeOfDay();
 

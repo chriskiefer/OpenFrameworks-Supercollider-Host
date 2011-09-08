@@ -37,6 +37,11 @@ testApp::~testApp() {
     if(superCollider){
         delete superCollider;
     }
+	
+	for(int i=0; i< scBufferList->mNumberBuffers; i++) 
+		delete[] scBufferList->mBuffers[i].mData;
+	
+	delete scBufferList;
 }
 
 void testApp::syncOSCOffsetWithTimeOfDay()
