@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83032F13141B624200FD1785 /* embeddedSC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83032F12141B624200FD1785 /* embeddedSC.cpp */; };
 		8354488F140CFBC900D16314 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83544883140CFBC900D16314 /* fft.cpp */; };
 		83544890140CFBC900D16314 /* maxiFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83544885140CFBC900D16314 /* maxiFFT.cpp */; };
 		83544891140CFBC900D16314 /* maxiGrains.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83544887140CFBC900D16314 /* maxiGrains.cpp */; };
@@ -66,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		83032F11141B624200FD1785 /* embeddedSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = embeddedSC.h; sourceTree = "<group>"; };
+		83032F12141B624200FD1785 /* embeddedSC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = embeddedSC.cpp; sourceTree = "<group>"; };
 		83296BDF141572B1005262B2 /* clz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clz.h; sourceTree = "<group>"; };
 		83296BE0141572B1005262B2 /* dfftlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dfftlib.h; sourceTree = "<group>"; };
 		83296BE1141572B1005262B2 /* fftlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftlib.h; sourceTree = "<group>"; };
@@ -155,7 +158,7 @@
 		8359BA5D140FB4F7007B12A0 /* OSCMessages.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSCMessages.cpp; sourceTree = "<group>"; };
 		8359BA5E140FB4F7007B12A0 /* OSCMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCMessages.h; sourceTree = "<group>"; };
 		8359BBD414100406007B12A0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
-		8359BCD61413BDCB007B12A0 /* libscsynthAU.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libscsynthAU.a; sourceTree = "<group>"; };
+		8359BCD61413BDCB007B12A0 /* libscsynthAU.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libscsynthAU.a; path = ../libscsynthAU.a; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -345,16 +348,19 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		8359B9F9140F9FF0007B12A0 /* sc */ = {
+		8359B9F9140F9FF0007B12A0 /* embeddedSC */ = {
 			isa = PBXGroup;
 			children = (
+				8359BCD61413BDCB007B12A0 /* libscsynthAU.a */,
 				83296BDD141572B1005262B2 /* include */,
 				8359BA00140FA06E007B12A0 /* SCProcess.cpp */,
 				8359BA01140FA06E007B12A0 /* SCProcess.h */,
 				8359BA5D140FB4F7007B12A0 /* OSCMessages.cpp */,
 				8359BA5E140FB4F7007B12A0 /* OSCMessages.h */,
+				83032F11141B624200FD1785 /* embeddedSC.h */,
+				83032F12141B624200FD1785 /* embeddedSC.cpp */,
 			);
-			name = sc;
+			name = embeddedSC;
 			sourceTree = "<group>";
 		};
 		BB4B014C10F69532006C3DED /* addons */ = {
@@ -415,7 +421,6 @@
 			children = (
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
-				8359BCD61413BDCB007B12A0 /* libscsynthAU.a */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
@@ -427,7 +432,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				8359B9F9140F9FF0007B12A0 /* sc */,
+				8359B9F9140F9FF0007B12A0 /* embeddedSC */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
@@ -537,6 +542,7 @@
 				83544893140CFBC900D16314 /* maximilian.cpp in Sources */,
 				8359BA02140FA06E007B12A0 /* SCProcess.cpp in Sources */,
 				8359BA5F140FB4F7007B12A0 /* OSCMessages.cpp in Sources */,
+				83032F13141B624200FD1785 /* embeddedSC.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

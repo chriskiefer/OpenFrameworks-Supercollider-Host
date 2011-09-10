@@ -4,7 +4,18 @@ This project shows how to run a SuperCollider server from within the audio callb
 
 It's based on Gerard Roma's SuperColliderAU project.
 
-Usage:  Running this project will start a blank OF app along with a SC server.  You can access the server from the SuperCollider app, where you can build a synthdef graph to generate or process audio. See the SuperColliderAU help file for an example of how this works.
+Usage:  
+In initialize(), change SC_PLUGIN_PATH and SC_SYNTHDEF_PATH to match your system.
+Running this project will start a blank OF app along with a SC server.  You can access the server from the SuperCollider app, where you can build a synthdef graph to generate or process audio.  For example, try this:
+
+u = Server(\scau, NetAddr("127.0.0.1", 9989)); 
+u.serverRunning = true;
+u.ping(10); 
+//high pass the input
+z = { HPF.ar(AudioIn.ar([1,2]), 1000) }.play(u)
+z.free
+
+See the SuperColliderAU help file for more details.
 
 Limitations:  There is no event scheduling in the server. SC needs timing info for this as OF does not expose time stamps for audio buffers.
 

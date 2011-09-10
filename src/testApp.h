@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 
-#include "SCProcess.h"
+#include "embeddedSC.h"
 
 class testApp : public ofBaseApp{
 
@@ -24,14 +24,9 @@ public:
 
 	void audioRequested 	(float * input, int bufferSize, int nChannels);
 
-	World* world;
-	SCProcess* superCollider;
-	int64 gOSCoffset;
-	AudioBufferList *scBufferList;
+	embeddedSCServer superCollider;
 	int sampleRate;
 	int bufferSize;
-	void initialize();
-	void syncOSCOffsetWithTimeOfDay();
 
 
 };
