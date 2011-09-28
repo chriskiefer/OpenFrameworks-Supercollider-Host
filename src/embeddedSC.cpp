@@ -40,7 +40,7 @@ embeddedSCServer::~embeddedSCServer() {
     }
 	
 	for(int i=0; i< scBufferList->mNumberBuffers; i++) 
-		delete[] scBufferList->mBuffers[i].mData;
+		delete[] (float*) scBufferList->mBuffers[i].mData;
 	
 	delete scBufferList;
 }

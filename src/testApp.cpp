@@ -38,6 +38,9 @@ void testApp::audioRequested 	(float * output, int bufferSize, int nChannels){
 	//if generating sound only in SC, then clear the buffer each time
 //	for(int i=0; i < bufferSize * nChannels; i++) output[i] = 0;
 
+	//important: make sure there are no NaNs in the input, as this can *&^% up ugens in unpredictable ways
+	for(int i=0; i < bufferSize * nChannels; i++) if (isnan(output[i])) output[i] = 0;
+
 	superCollider.process(output, bufferSize, nChannels);	
 }
 
