@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		83032F13141B624200FD1785 /* embeddedSC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83032F12141B624200FD1785 /* embeddedSC.cpp */; };
-		8354488F140CFBC900D16314 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83544883140CFBC900D16314 /* fft.cpp */; };
-		83544890140CFBC900D16314 /* maxiFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83544885140CFBC900D16314 /* maxiFFT.cpp */; };
-		83544891140CFBC900D16314 /* maxiGrains.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83544887140CFBC900D16314 /* maxiGrains.cpp */; };
-		83544892140CFBC900D16314 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83544889140CFBC900D16314 /* maxiMFCC.cpp */; };
-		83544893140CFBC900D16314 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8354488B140CFBC900D16314 /* maximilian.cpp */; };
 		8359BA02140FA06E007B12A0 /* SCProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8359BA00140FA06E007B12A0 /* SCProcess.cpp */; };
 		8359BA5F140FB4F7007B12A0 /* OSCMessages.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8359BA5D140FB4F7007B12A0 /* OSCMessages.cpp */; };
 		8359BBD514100406007B12A0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8359BBD414100406007B12A0 /* Accelerate.framework */; };
@@ -141,18 +136,6 @@
 		83296C26141572B1005262B2 /* SC_UnitDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SC_UnitDef.h; sourceTree = "<group>"; };
 		83296C27141572B1005262B2 /* SC_UnitSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SC_UnitSpec.h; sourceTree = "<group>"; };
 		83296C28141572B1005262B2 /* SC_WireSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SC_WireSpec.h; sourceTree = "<group>"; };
-		83544881140CFBC900D16314 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
-		83544883140CFBC900D16314 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
-		83544884140CFBC900D16314 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
-		83544885140CFBC900D16314 /* maxiFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiFFT.cpp; sourceTree = "<group>"; };
-		83544886140CFBC900D16314 /* maxiFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiFFT.h; sourceTree = "<group>"; };
-		83544887140CFBC900D16314 /* maxiGrains.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiGrains.cpp; sourceTree = "<group>"; };
-		83544888140CFBC900D16314 /* maxiGrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiGrains.h; sourceTree = "<group>"; };
-		83544889140CFBC900D16314 /* maxiMFCC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiMFCC.cpp; sourceTree = "<group>"; };
-		8354488A140CFBC900D16314 /* maxiMFCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiMFCC.h; sourceTree = "<group>"; };
-		8354488B140CFBC900D16314 /* maximilian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maximilian.cpp; sourceTree = "<group>"; };
-		8354488C140CFBC900D16314 /* maximilian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maximilian.h; sourceTree = "<group>"; };
-		8354488E140CFBC900D16314 /* ofxMaxim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
 		8359BA00140FA06E007B12A0 /* SCProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SCProcess.cpp; sourceTree = "<group>"; };
 		8359BA01140FA06E007B12A0 /* SCProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCProcess.h; sourceTree = "<group>"; };
 		8359BA5D140FB4F7007B12A0 /* OSCMessages.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OSCMessages.cpp; sourceTree = "<group>"; };
@@ -312,42 +295,6 @@
 			path = server;
 			sourceTree = "<group>";
 		};
-		83544880140CFBC900D16314 /* ofxMaxim */ = {
-			isa = PBXGroup;
-			children = (
-				83544881140CFBC900D16314 /* install.xml */,
-				83544882140CFBC900D16314 /* libs */,
-				8354488D140CFBC900D16314 /* src */,
-			);
-			name = ofxMaxim;
-			path = ../../../addons/ofxMaxim;
-			sourceTree = SOURCE_ROOT;
-		};
-		83544882140CFBC900D16314 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				83544883140CFBC900D16314 /* fft.cpp */,
-				83544884140CFBC900D16314 /* fft.h */,
-				83544885140CFBC900D16314 /* maxiFFT.cpp */,
-				83544886140CFBC900D16314 /* maxiFFT.h */,
-				83544887140CFBC900D16314 /* maxiGrains.cpp */,
-				83544888140CFBC900D16314 /* maxiGrains.h */,
-				83544889140CFBC900D16314 /* maxiMFCC.cpp */,
-				8354488A140CFBC900D16314 /* maxiMFCC.h */,
-				8354488B140CFBC900D16314 /* maximilian.cpp */,
-				8354488C140CFBC900D16314 /* maximilian.h */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		8354488D140CFBC900D16314 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				8354488E140CFBC900D16314 /* ofxMaxim.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		8359B9F9140F9FF0007B12A0 /* embeddedSC */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,7 +313,6 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				83544880140CFBC900D16314 /* ofxMaxim */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -535,11 +481,6 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
-				8354488F140CFBC900D16314 /* fft.cpp in Sources */,
-				83544890140CFBC900D16314 /* maxiFFT.cpp in Sources */,
-				83544891140CFBC900D16314 /* maxiGrains.cpp in Sources */,
-				83544892140CFBC900D16314 /* maxiMFCC.cpp in Sources */,
-				83544893140CFBC900D16314 /* maximilian.cpp in Sources */,
 				8359BA02140FA06E007B12A0 /* SCProcess.cpp in Sources */,
 				8359BA5F140FB4F7007B12A0 /* OSCMessages.cpp in Sources */,
 				83032F13141B624200FD1785 /* embeddedSC.cpp in Sources */,
