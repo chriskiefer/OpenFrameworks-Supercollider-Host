@@ -4,6 +4,8 @@ This project shows how to run a SuperCollider server from within the audio callb
 
 It's based on Gerard Roma's SuperColliderAU project.
 
+For those familiar with SC and OF, some quick instructions:
+
 Usage:  
 In initialize(), change SC_PLUGIN_PATH and SC_SYNTHDEF_PATH to match your system.
 Running this project will start a blank OF app along with a SC server.  You can access the server from the SuperCollider app, where you can build a synthdef graph to generate or process audio.  For example, try this:
@@ -24,6 +26,32 @@ How it works: A variant of libscsynth was built from the SuperCollider source, w
 (2) '_AUCallback' was added to the list of exports in libscsynth_exp.
 This static library is included in this repository as 'libscsynthAU.a'
 
+
+-------------------------------------------
+
+For those new to SuperCollider and OpenFrameworks, @mlunoe provides some more detailed instructions:
+
+SuperCollider:
+
+Get SuperCollider at http://supercollider.sourceforge.net/downloads/ and install.
+Play around with SuperCollider. I found this workshop helpful: http://www.informatics.sussex.ac.uk/users/nc81/courses/cm1/workshop.html
+
+OpenFrameworks with OpenFrameworks-Supercollider-Host:
+
+-Get the openFrameworks at http://www.openframeworks.cc/download
+-Get the @chriskiefer OpenFrameworks-Supercollider-Host project at under the code tab (here's a direct link for you: https://github.com/chriskiefer/OpenFrameworks-Supercollider-Host) and unzip
+-Copy the whole "chriskiefer-OpenFrameworks-Supercollider-Host-XXXXXXX" folder into openFrameworks/addons/
+-Open the "schostExample.xcodeproj" under openFrameworks/addons/chriskiefer-OpenFrameworks-Supercollider-Host-XXXXXXX/
+-(Turn the volume down and) press "Build and Run".
+
+
+Make them work together:
+
+-When the OpenFrameworks-Supercollider-Host project is running open SuperCollider.app-
+-Copy the SuperCollider code above and paste it into a new SuperCollider window
+-Run each line (except the last one!) by placing the curser at each line and pressing Shift+Enter. The white noise provided by the OpenFrameworks-Supercollider-Host should change when Shift+Enter is pressed on line "z = { HPF.ar(AudioIn.ar([1,2]), 1000) }.play(u)"
+-Press Shift+Enter at the last line "z.free" to restore the original sound.
+-Go to the OpenFrameworks-Supercollider-Host project and hit Esc to kill the white noise.
 
 
 
