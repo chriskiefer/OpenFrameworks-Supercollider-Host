@@ -142,7 +142,7 @@ void embeddedSCServer::process (float *buffer, int bufferSize, int nChannels) {
 	if (nChannels > 1) {
 		for(int i=0; i < nChannels; i++) {
 			for(int j=0; j < bufferSize; j++) {
-				((float*)scBufferList->mBuffers[i].mData)[j] = buffer[(nChannels*j) + 1];
+				((float*)scBufferList->mBuffers[i].mData)[j] = buffer[(nChannels*j) + i];
 			}
 		}
 	}

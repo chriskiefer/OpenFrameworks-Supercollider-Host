@@ -64,6 +64,7 @@
 /* Begin PBXFileReference section */
 		83032F11141B624200FD1785 /* embeddedSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = embeddedSC.h; sourceTree = "<group>"; };
 		83032F12141B624200FD1785 /* embeddedSC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = embeddedSC.cpp; sourceTree = "<group>"; };
+		83255D44162398F900CFB970 /* schostExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = schostExample.xcodeproj; sourceTree = "<group>"; };
 		83296BDF141572B1005262B2 /* clz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clz.h; sourceTree = "<group>"; };
 		83296BE0141572B1005262B2 /* dfftlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dfftlib.h; sourceTree = "<group>"; };
 		83296BE1141572B1005262B2 /* fftlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftlib.h; sourceTree = "<group>"; };
@@ -192,6 +193,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83255D45162398F900CFB970 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		83296BDD141572B1005262B2 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +371,7 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				83255D44162398F900CFB970 /* schostExample.xcodeproj */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -440,6 +447,10 @@
 					ProductGroup = E4328144138ABC890047C5CB /* Products */;
 					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
 				},
+				{
+					ProductGroup = 83255D45162398F900CFB970 /* Products */;
+					ProjectRef = 83255D44162398F900CFB970 /* schostExample.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -452,7 +463,8 @@
 		E4328148138ABC890047C5CB /* openFrameworks.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = openFrameworks.a;
+			name = openFrameworks.a;
+			path = openFrameworksDebug.a;
 			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
